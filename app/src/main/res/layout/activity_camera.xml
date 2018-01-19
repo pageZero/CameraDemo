@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.example.zjl.camerademo.CameraActivity">
+
+    <FrameLayout
+        android:id="@+id/container"
+        android:background="@android:color/transparent"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="132dp"
+        android:background="@drawable/camera_bg"
+        android:layout_gravity="bottom"
+        >
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:layout_centerVertical="true"
+            android:layout_centerHorizontal="true"
+            >
+            <ImageButton
+                android:id="@+id/take_pic_btn"
+                android:background="@drawable/selector_pailoitao_camera_bg"
+                android:layout_width="50dp"
+                android:layout_height="50dp"
+                android:layout_gravity="bottom|center_horizontal"
+                />
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="@string/take_picture"
+                android:gravity="center_horizontal"
+                android:textSize="14dp"
+                android:layout_marginTop="8dp"
+                />
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</FrameLayout>

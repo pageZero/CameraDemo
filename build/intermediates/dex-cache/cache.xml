@@ -1,0 +1,23 @@
+<?xml version="1.0" encoding="utf-8"?>
+<items version="2" >
+
+    <item
+        is-multidex="true"
+        jar="/home/zjl/zhengjl/Demo/CameraDemo/app/build/intermediates/incremental-classes/debug/instant-run-bootstrap.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="a6b37ddeac1abe7edf3e6669b0f869f2fe8e3f10">
+        <dex dex="/home/zjl/zhengjl/Demo/CameraDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run-bootstrap_c712865290e7dcdbf83f636996ab945e1283fe3d/classes.dex" />
+    </item>
+    <item
+        is-multidex="true"
+        jar="/home/zjl/zhengjl/Demo/CameraDemo/app/build/intermediates/incremental-runtime-classes/debug/instant-run.jar"
+        jumboMode="true"
+        optimize="true"
+        revision="26.0.2"
+        sha1="3be78ebc2706b2e1fe2f12d5726887a92d6c183b">
+        <dex dex="/home/zjl/zhengjl/Demo/CameraDemo/app/build/intermediates/transforms/dex/debug/folders/1000/10000/instant-run_ac690ddafb4e27c199fb0ab902ace6b75cebeec5/classes.dex" />
+    </item>
+
+</items>
