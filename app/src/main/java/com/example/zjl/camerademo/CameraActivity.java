@@ -141,7 +141,8 @@ public class CameraActivity extends AppCompatActivity implements SurfaceHolder.C
             }
 
         }
-        mSurfaceView.setVisibility(View.GONE);
+        if (mSurfaceView != null)
+            mSurfaceView.setVisibility(View.GONE);
     }
 
     public void showToast(String message) {
