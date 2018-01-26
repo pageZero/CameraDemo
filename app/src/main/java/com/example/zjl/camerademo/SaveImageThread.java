@@ -65,7 +65,7 @@ public class SaveImageThread extends HandlerThread {
                         break;
                     case R.id.quit:
                         Looper looper = Looper.myLooper();
-                        Log.d("zzz","lopper--thread name:" + looper.getThread().getName());
+                        Log.d("SaveImageThread","lopper--thread name:" + looper.getThread().getName());
                         if (looper != null) {
                             looper.quit();
                         }

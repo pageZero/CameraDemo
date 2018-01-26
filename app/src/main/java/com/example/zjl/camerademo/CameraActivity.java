@@ -110,6 +110,7 @@ public class CameraActivity extends AppCompatActivity implements SurfaceHolder.C
 
     private void initCamera(SurfaceHolder surfaceHolder) {
         try {
+            //1. 连接相机
             if (!CameraManager.get().openDriver(surfaceHolder)) {
                 Log.d(TAG, "Camera被占用，可能是上次Camera没有被释放");
             }
@@ -130,9 +131,6 @@ public class CameraActivity extends AppCompatActivity implements SurfaceHolder.C
                 //停止预览
                 mCaptureHandler.quitSynchronously();
                 mCaptureHandler = null;//下次进入重新初始化
-//                if (mSurfaceView != null) {
-//                    mSurfaceView.getHolder().removeCallback(this);
-//                }
                 //释放相机
                 CameraManager.get().closeDriver();
             } catch (Exception e) {
@@ -141,7 +139,6 @@ public class CameraActivity extends AppCompatActivity implements SurfaceHolder.C
             }
 
         }
-        mSurfaceView.setVisibility(View.GONE);
     }
 
     public void showToast(String message) {
